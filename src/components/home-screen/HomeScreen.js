@@ -23,6 +23,15 @@ const HomeScreen = ({navigation}) => {
         <Text style={styles.text}>Search Bar</Text>
       </TouchableOpacity>
 
+      <TouchableOpacity
+        style={styles.stack}
+        onPress={()=>{
+          navigation.navigate("Search Box")
+        }}  
+      >
+        <Text style={styles.text}>Search Box</Text>
+      </TouchableOpacity>
+
     </View>
   )
 }

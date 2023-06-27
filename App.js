@@ -3,6 +3,7 @@ import { createNativeStackNavigator } from "@react-navigation/native-stack"
 
 import HomeScreen from "./src/components/home-screen/HomeScreen"
 import SearchBar from "./src/components/search-bar/SearchBar"
+import SearchBox from "./src/components/search-box/SearchBox"
 
 export default function App() {
 
@@ -23,6 +24,11 @@ export default function App() {
         <Stack.Screen
           name="Search Bar"
           component={SearchBar}
+        />
+
+        <Stack.Screen
+          name="Search Box"
+          component={SearchBox}
         />
 
       </Stack.Navigator>
