@@ -32,6 +32,15 @@ const HomeScreen = ({navigation}) => {
         <Text style={styles.text}>Search Box</Text>
       </TouchableOpacity>
 
+      <TouchableOpacity
+        style={styles.stack}
+        onPress={()=>{
+          navigation.navigate("Three-Dot Menu")
+        }}  
+      >
+        <Text style={styles.text}>Three-Dot Menu</Text>
+      </TouchableOpacity>
+
     </View>
   )
 }

@@ -4,6 +4,7 @@ import { createNativeStackNavigator } from "@react-navigation/native-stack"
 import HomeScreen from "./src/components/home-screen/HomeScreen"
 import SearchBar from "./src/components/search-bar/SearchBar"
 import SearchBox from "./src/components/search-box/SearchBox"
+import ThreeDotMenu from "./src/components/three-dot-menu/ThreeDotMenu"
 
 export default function App() {
 
@@ -29,6 +30,11 @@ export default function App() {
         <Stack.Screen
           name="Search Box"
           component={SearchBox}
+        />
+
+        <Stack.Screen
+          name="Three-Dot Menu"
+          component={ThreeDotMenu}
         />
 
       </Stack.Navigator>
