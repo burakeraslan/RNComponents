@@ -41,6 +41,15 @@ const HomeScreen = ({navigation}) => {
         <Text style={styles.text}>Three-Dot Menu</Text>
       </TouchableOpacity>
 
+      <TouchableOpacity
+        style={styles.stack}
+        onPress={()=>{
+          navigation.navigate("Swipe to Delete")
+        }}  
+      >
+        <Text style={styles.text}>Swipe to Delete</Text>
+      </TouchableOpacity>
+
     </View>
   )
 }

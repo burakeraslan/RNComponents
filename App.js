@@ -1,10 +1,11 @@
 import { NavigationContainer } from "@react-navigation/native"
 import { createNativeStackNavigator } from "@react-navigation/native-stack"
 
-import HomeScreen from "./src/components/home-screen/HomeScreen"
-import SearchBar from "./src/components/search-bar/SearchBar"
-import SearchBox from "./src/components/search-box/SearchBox"
-import ThreeDotMenu from "./src/components/three-dot-menu/ThreeDotMenu"
+import HomeScreen from "./src/home-screen/HomeScreen"
+import SearchBar from "./src/search-bar/SearchBar"
+import SearchBox from "./src/search-box/SearchBox"
+import ThreeDotMenu from "./src/three-dot-menu/ThreeDotMenu"
+import SwipeToDelete from "./src/swipe-to-delete/SwipeToDelete"
 
 export default function App() {
 
@@ -35,6 +36,11 @@ export default function App() {
         <Stack.Screen
           name="Three-Dot Menu"
           component={ThreeDotMenu}
+        />
+
+        <Stack.Screen
+          name="Swipe to Delete"
+          component={SwipeToDelete}
         />
 
       </Stack.Navigator>
